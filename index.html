@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="navContainer">
+            <div class="logoContainer">
+                <img id="logoImg" src="assets/Rl_r6RuxiB8vimDV.jpg">
+            </div>
+            <div class="discoverMusicMenuBox">
+                <button type="button" id="navButton" class="discoverMenuButton">
+                    <strong>DISCOVER MUSIC</strong>
+                </button>
+                <ul id="navMenuList" class="discoverMenuList">
+                    <li><strong>Records</strong></li>
+                    <li><strong>Cassettes</strong></li>
+                    <li><strong>Stories</strong></li>
+                    <li><strong>Qrates Curated</strong></li>    
+                </ul>
+            </div>
+            <div class="navLinks">
+                <a href=index.html class="linkArtists"><strong>FOR ARTISTS</strong></a>
+                <a class="linkFans"><strong>FOR FANS</strong></a>
+            </div>
+            <div class="iconsButtonsBox">
+                <a class="searchButton">
+                    <img id="searchIcon" src="data:image/png;base64,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"/>
+                </a>
+                <a class="cartButton">
+                    <img id="cartIcon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAEn0lEQVR4Xu2djXETMRCFkw6gA9MB6cBUAFSAqSBQAaYC6ABTAVAB7gA6wB1AB7Bv5o65ODnterx/Oq9mNMlgWSvtd6t90inD9VWVUA9ch1ov41cFIPghKAAFINgDweYrAgpAsAeCzVcEFIBgDwSbrwgoAMEeCDZfEdABgL/CMe6p3R+qn6l+FX7n4ptJIkAKYOpMwHg5ALl4J7ccYAUANhENz6j+LALzHrAEAKsHqk8KQBwAWH5L9WNBeNgD1hEwLkWPC0AcAFh+TXVXEO57wCMCKhc0njwJAMmDu6FGn5iGSMZIylUmHtAC8Ij6/M14FksQlqIqBgDQJSIAkTBXsC+4qSi46x6tCECvK6q/mMe7JOmRgzQBoGsAAIhWFJQkNVqC0C2WIC4ZlyQ1BIBk/IOJgj19jjOiKuQB7SUITv1A9Q3j3ZKkg4MsAEgk6ZKf/gNNDlEOwQHl1ywWAGCQk6TcuJbwOUBgqcXP2WIFYE0Wvy/Bi2fOYUffb24+rQBg3JwkPXNuXXwdS1BTdlsC2AxLUReeMhoklp/mCylLAJeejMEUlxPwbtw9B4wGLz0Zs5tOywgAhNWQC4wiPHW3WP+x/DSlqDUASTJmE1VSN3Mig11+MC8PAJJkzIZqMggvaDxfmDFhD7Dnxu0BYInnQ3A+IMwV3IXCuw+2eADAIJZ0PoQHCssPfs6VLX3wnvW+0xKEcUgk6Y7a9fDKEgeNeKBaRXzY6BUBGCwnSXtJxjhiWTe8L0q+4/c9AWDQ3PlQ9mT8lOaA9x2tctIcPAFg0Jx0O1Cb5tZdsq4atnlHfW8b/Yu0//T73gA2w1Kksn4aOnqua+4BOmn5gRFvAD0nYzXtHxkBkmSMNmIV4RgFato/GsBqyAUt32W7P6Sq/aMBSJJxNkmqqv0zAJAk45PknPFSpKr9MwDo6XxIXftnAIAx9HI+pK79swDoRZKqa/8sACSSNDoZm2j/TADWNJjM50Mm2j8TAIkkPQwbM2Ohc697M+2fDYBEkkbsjM20fzYAWZOxmfbPBkCSjNHGMwpMtX9GANnOh0y1f0YAkmTsnYRb9k4+95/rzPt9QGtSkmScBYLozo9ksJkA9BIF4js/PQKQnA9J5mXZZkudi+78SAaRLQIkklQyL8s2qmosGwCpJLV0sEvyHY1kBIAowCYIWjxTOdBgcN8TB4RqJSMATG5F9ZYqTiPxe2SBw5F48YYOEFRLVgCqk8zcWQEIplMACkCwB4LNZ48AJOFXQyKGOkIy/EZ1Z+Q3b3vud0OlfoOz8fcEcMhDBSBwHqMlCb3t/Z9T1gjg3sViAvsBghRqq523vdQANsPTL3Gsxu05b3t35pUxAiRP4zgJjXN5b3vpAXAXoaYT0Lg35G2vABytbQXgyCHcX1NOm2skYm976SNAch1wnMSWfjn35Yi3vfQAMEDuTs4oQ7X+nxpve6llKAaHjRHUyXpGi2Lp0Twe9raXHsA4QFwPfE51fDkzPYrQ2gVPGXvbS3sUMfPgL++fM27EluflxowKQDDuAlAAgj0QbL4ioAAEeyDYfEVAAQj2QLD5ioACEOyBYPMVAcEA/gHg4ethUGUVwQAAAABJRU5ErkJggg=="/>
+                </a>
+            </div>
+            <div class="rightNavContainer">
+                <div class="logInBox">
+                    <a class="logInLink"><strong>LOG IN</strong></a>
+                </div>
+                <div class="makeYourOwnBox">
+                    <a class="makeYourOwnLink"><strong>MAKE YOUR OWN</strong></a>
+                </div>
+            </div>
+        </div>
+      </header>
+      <main>
+        <div class="heroContainer">
+            <div class="heroTextContainer">
+                <div class="forArtistsLabelBox">
+                    FOR ARTISTS
+                </div>
+                <div class="forArtistsHeroHeadingBox">
+                    <h1 class="heroHeading">Music in your hands. Without the barriers.</h1>
+                </div>
+                <div class="forArtistsParagraphBox">
+                    <p class="forArtistsParagraph">Full-service production, a global retail network, customer support - and you keep up to 85% of profits.↓</p>
+                </div>
+            </div>
+            <div class="heroImageBox1">
+                <img id="heroImage1" src="assets/heroImage1.svg">
+            </div>
+            <div class="heroImageBox2">
+                <img id="heroImage2" src="assets/heroImage2.svg">
+            </div>
+            <div class="heroImageBox3">
+                <img id="heroImage3" src="assets/heroImage3.svg">
+                <div class="circularText">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="forArtistsDetailsSectionIntroBox">
+            <div class="choseFontsBox">
+                <h1 class="choseFontsHeading">Choose from two formats with promised quality</h1>
+            </div>
+            <div class="vinylBox">
+                <h2 class="vinylHeading">Vinyl</h2>
+                <p class="vinylText">We know how special pressed records are to you. Our products are built for fans. We make it easy for artists to press vinyl, so the music you love can keep reaching ears in the most beautiful way.</p>
+                <div class="vinylImgBox">
+                    <img id="vinylImg" src="assets/forArtistsIntroImage1.svg">
+                </div>
+            </div>
+            <div class="cassetteBox">
+                <h2 class="cassetteHeading">Cassette</h2>
+                <p class="cassetteText">Cassettes have always been special to music fans and artists. Whether you are saving a record of a great concert, or preserving an early demo, there's no better way to keep that music close than on cassette tapes.</p>
+                <div class="cassetteImgBox">
+                    <img id="cassetteImg" src="assets/forArtistsIntroImage2.svg">
+                </div>  
+            </div>
+            <div class="dividerFirst">
+                <h1>You make music. We do the rest.</h1>
+            </div>
+        </div>
+
+        <div class="forArtistsDetailsYouVsQrates">
+            <div class="youBox">
+                <div class="youLabel">YOU</div>
+                <h1 class="youMainHeading">Focus on making music</h1>
+                <p class="youMainText">You can focus on your music production with peace of mind: the Artist Toolkit has lots of information about music production, knowledge about vinyl records and cassettes, and tips on how to sell your music. Artist Toolkit</p>
+
+                <div class="youSectionOne">
+                    <h1 class="youDetailsSectionOneHeading">Express your work on Qrates</h1>
+                    <h3 class="youDetailsSectionOneSubHeading">Qrates studio</h3>
+                    <p class="youDetailsSectionOneParagraph">Your product details should match the details of your music. Tweak and customize your vinyl, sleeve, jacket, and more.</p>
+                </div>
+
+                <div class="youSectionTwo">
+                    <h1 class="youDetailsSectionTwoHeadingFirst">Start a Qrates page,
+                        </h1>
+                    <h1 class="youDetailsSectionOneHeadingSecond">
+                        confirm and pay for production costs.
+                        <br>
+                        Pay up front? Crowdfunding?</h1>
+                    <p class="youDetailsSectionTwoParagraphFirst">Pay for the production of your product in advance and start production immediately, or choose the crowdfunding option and press as many copies you like with pledges you collect from your fans.</p>
+                    <h3 class="youDetailsSectionTwoSubHeading">Qrates page and Artist page</h3>
+                    <p class="youDetailsSectionTwoParagraphSecond">The Qrates page is your storefront on Qrates to sell your music. The Artist page is your profile page. Upload your images to the template provided and fill in the form to set it up.</p>
+                    <img class="youSectionTwoImg" src="assets/youSectionTwoImg.svg">
+                </div>
+
+                <div class="youSectionThree">
+                    <h1 class="youSectionThreeHeading">Collect orders from fans</h1>
+                    <p class="youSectionThreeParagraph">Share your Qrates page and collect orders from your fans. A variety of tools are also available to promote your music.</p>
+                </div>
+
+                <div class="youSectionFour">
+                    <h1 class="youSectionFourHeading">Upload your product assets and start production</h1>
+                    <p class="youSectionFourParagraph">Prepare your audio and print files required for production.</p>
+                </div>
+
+                <div class="youSectionFive">
+                    <img class="youSectionFiveImg" src="assets/youSectionFiveImg.svg">
+                </div>
+                <div class="youSectionSix"></div>
+
+                <div class="youSectionSeven">
+                    <h1 class="youSectionSevenHeading">Receive revenue</h1>
+                    <p class="youSectionSevenParagraph">Make a request to receive your revenue. We can deposit your funds to your pre-registered bank account or Paypal account.</p>
+                    <img class="youSectionSevenImg" src="assets/youSectionSevenImg.svg">
+                </div>
+            </div>
+            
+            <div class="sectionMarkerOne">1</div>
+            <div class="detailsArrowOne"></div>
+            <div class="sectionMarkerTwo">2</div>
+            <div class="detailsArrowTwo"></div>
+            <div class="sectionMarkerThree">3</div>
+            <div class="detailsArrowThree"></div>
+            <div class="sectionMarkerFour">4</div>
+            <div class="detailsArrowFour"></div>
+            <div class="sectionMarkerFive">5</div>
+            <div class="detailsArrowFive"></div>
+            <div class="sectionMarkerSix">6</div>
+            <div class="detailsArrowSix"></div>
+            <div class="sectionMarkerSeven">7</div>
+           
+
+
+
+
+
+            <div class="qratesBox">
+            
+                <div class="qratesLabel">Qrates</div>
+                <h1 class="qratesMainHeading">We'll take care of the hassle</h1>
+                <p class="qratesMainText">Qrates supports a wide range of artists while eliminating the hassles, costs and risks associated with pressing records, giving artists more time and income back in their hands.</p>
+    
+                <div class="qratesSectionOne">
+                    <h1 class="qratesDetailsSectionOneHeading">Over 120,000 customization possibilities
+                        <br>
+                        3D Visualizer
+                    </h1>
+                    <p class="qratesDetailsSectionOneParagraph">Choose from vinyl or cassette, each with a wide range of options including colors, packaging, obi strips, download cards, etc. There are over 120,000 variations of colors and specs for vinyl and cassette that can be customized in the Qrates Studio.</p>
+                    <img class="qratesSectionOneImg" src="assets/qratesSectionOneImg.svg">
+                </div>
+
+                <div class="qratesSectionTwo">
+                    <h1 class="qratesSectionTwoHeading">We support a wide range of artists' needs</h1>
+                    <h3 class="qratesSectionTwoSubHeadingOne">Small production minimums</h3>
+                    <p class="qratesSectionTwoParagraphOne">Vinyl records can be made from 100 copies, and cassette tapes from 50 copies.</p>
+                    <h3 class="qratesSectionTwoSubHeadingTwo">Select the payment option</h3>
+                    <p class="qratesSectionTwoParagraphTwo">You can pay for the production of your product in advance and begin the production process immediately. We also have a pre-order function, which allows you to take orders during production until completion, and the crowdfunding method, which allows you to collect orders in advance and then begin the manufacturing process. If you don't want to pay for the production costs upfront, or if you want to collect orders from your fans before deciding on the final number of pieces to be produced, try crowdfunding. No risk, no waste.</p>
+                    <h3 class="qratesSectionTwoSubHeadingThree">Easily customizable your Qrates page and artist page</h3>
+                    <p class="qratesSectionTwoParagraphThree">Qrates provides easy-to-setup templates for the Qrates page and the artist profile page. The Qrates page for selling your music can be set up to include audio samples, embedded videos, and comments from fans, making it a great promotional tool.</p>
+                </div>
+
+                <div class="qratesSectionThree">
+                    <h1 class="qratesSectionThreeHeading">Wholesale distribution network</h1>
+                    <h3 class="qratesSectionThreeSubHeading">You can sell wholesale directly to record stores worldwide</h3>
+                    <p class="qratesSectionThreeParagraph">Simply start selling on your Qrates page and receive orders from over 150 record stores and distributors worldwide that we partner with.</p>
+                    <img class="qratesSectionThreeImg" src="assets/qratesSectionThreeImg.svg">
+                </div>
+
+                <div class="qratesSectionFour">
+                    <h1 class="qratesSectionFourHeading">Professional audio mastering and artwork support.</h1>
+                    <h3 class="qratesSectionFourSubHeadingOne">Audio mastering service</h3>
+                    <p class="qratesSectionFourParagraphOne">Qrates offers a audio mastering service with a partner professional audio engineer to support optimal sound creation.</p>
+                    <h3 class="qratesSectionFourSubHeadingTwo">Artwork support</h3>
+                    <p class="qratesSectionFourParagraphTwo">We help ensure that your artwork conforms to printing standards and that your product is as beautiful as possible.</p>
+                </div>
+
+                <div class="qratesSectionFive">
+                    <h1 class="qratesSectionFiveHeading">Pressing records and making cassette tapes</h1>
+                    <h3 class="qratesSectionFiveSubHeadingOne">Trusted production partners</h3>
+                    <p class="qratesSectionFiveParagraphOne">We partner with factories that have a long history of manufacturing vinyl records and cassette tapes with proven technical capabilities and produce world-class quality products.</p>
+                    <h3 class="qratesSectionFiveSubHeadingTwo">Speedy delivery time </h3>
+                    <p class="qratesSectionFiveParagraphTwo">Vinyl records are shipped from our factory within an average of 16 weeks after ordering. Cassette tapes can be shipped from the factory in an average of 8 weeks or less.</p>
+                    <a class="qratesSectionFiveLearnMore"><strong>LEARN MORE</strong></a>
+                </div>
+
+                <div class="qratesSectionSix">
+                    <h1 class="qratesSectionSixHeading">Warehousing and Distribution</h1>
+                    <h3 class="qratesSectionSixSubHeadingOne">Free warehousing</h3>
+                    <p class="qratesSectionSixParagraphOne"><strong>When you sell records or cassettes on Qrates, you can store your products for free in one of our three worldwide distribution centers (USA, UK, Japan).</strong></p>
+                    <h3 class="qratesSectionSixSubHeadingTwo">Shipping</h3>
+                    <p class="qratesSectionSixParagraphTwo"><strong>When a product is purchased from a customer, Qrates carefully packages the product and ships it worldwide. We can also ship products to any designated location.</strong></p>
+                    <a class="qratesSectionSixLearnMore">LEARN MORE</a>
+                    <img class="qratesSectionSixImg" src="assets/qratesSectionSixImg.svg">
+                </div>
+
+                <div class="qratesSectionSeven">
+                    <h1 class="qratesSectionSevenHeading">Continue selling on Qrates</h1>
+                    <h3 class="qratesSectionSevenSubHeadingOne">Selling on Qrates</h3>
+                    <p class="qratesSectionSevenParagraphOne">By storing your inventory in the Qrates warehouse, you can continue to sell your work on Qrates. You can manufacture the exact number of copies as your project collected at the end of the crowdfunding campaign, or you can make more copies and continue to sell them on Qrates.</p>
+                    <h3 class="qratesSectionSevenSubHeadingTwo">Repress</h3>
+                    <p class="qratesSectionSevenParagraphTwo">Repressing records is always easy. Master stampers can be stored at the factory for 18 months at no charge, so there is no need to make new stampers within that time frame. Use the repress requests from fans as a signal on when to repress more records.</p>
+                    <a class="qratesSectionSevenLearnMore">LEARN MORE</a>
+                    <a class="qratesSectionSevenHowItWorks">HOW IT WORKS</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="secondDivider">
+            <h1 class="secondDividerHeading"><strong>Start a new project</strong></h1>
+            <img class="secondDividerIcon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAABAklEQVRYR+2WOw7CMBBE4yNQwukQ4iMKJFpScQM6Gj4FFzWzkoWiFN61M5GMtGmcZC3v08zETugau0JjPJ0DaY64Qq6QpoBWp2UoxnhBs1UI4aQ1zdUpQIC5ock5NXoAal8LxQK6A+A4gKiGogAJCFSiQNGAWFBUoAT1wrgZ2of7A3IVLbmaA0jWfI6gPnheW6DoQEmlaigTEAJ7tcg9miNry560GLwXO3c5paxAJv+N0Fn7/haIZdkbKm4nW2a04jcNmZs31CVAU2CkjylDhUDtbIyM84ymEAOGZhkLhgnU1g9aOr96jMsmfmFLvkJtLi3UWiNr3YE0pVwhV0hTQKt/AZhjbCV31eTLAAAAAElFTkSuQmCC"/>
+            <a class="secondDividerMakeYourOwn">MAKE YOUR OWN</a>
+        </div>
+
+        <div class="artistToolkitAndCustomerSupport">
+            <div class="artistToolkit">
+                <img class="artistToolkitImg" src="assets/artistToolkitImg.svg">
+                <div class="artistToolkitLabel"><strong>ARTIST TOOLKIT</strong></div>
+                <h1 class="artistToolkitHeading">Take you and your works to next level.</h1>
+                <p class="artistToolkitParagraph">We have a lot of informations and tips about music production, physical format and music business for you.</p>
+                <a class="artistToolkitLearnMore"><strong>LEARN MORE</strong></a>
+            </div>
+
+            <div class="customerSupport">
+                <img class="customerSupportImg" src="assets/customerSupportImg.svg">
+                <div class="customerSupportLabel"><strong>CUSTOMER SUPPORT</strong></div>
+                <h1 class="customerSupportHeading">Here to help, whenever you need it.</h1>
+                <p class="customerSupportParagraph">Whether you’re an artist in the middle of product, or a fan with questions about your order; our team is here to help.</p>
+                <a class="customerSupportContactUs"><strong>CONTACT US</strong></a>
+            </div>
+        </div>
+
+        <div class="thirdDivider">
+            <div class="thirdDividerLabel"><strong>COMMUNITY</strong></div>
+            <h1 class="thirdDividerHeading">Join a growing community.</h1>
+            <p class="thirdDividerParagraph">We're building a home for the next generation vinyl lovers and cassette junkies. Get in front of fans, connect with artists, labels and stores. </p>
+            <a class="thirdDividerReadMoreStories"><strong>READ MORE STORIES</strong></a>
+        </div>
+        
+        <div class="artistSwiper">
+            <div class="artistSwiperTextBox">
+                <div class="artistSwiperTextFirst" id="swiperTextOne">
+                    <div class="artistSwiperLabel"><strong>ARTIST ON QRATES</strong></div>
+                    <div class="artistSwiperParagraphOne">"The response was overwhelming. It made me wonder why I hadn't pressed any records on vinyl before now. It felt like something that people had been waiting for for a long time."</div>
+                    <a class="artistSwiperLinkOne"><strong>-SOL</strong></a>
+                </div>
+                <div class="artistSwiperTextSecond" id="swiperTextTwo">
+                    <div class="artistSwiperLabel"><strong>ARTIST ON QRATES</strong></div>
+                    <div class="artistSwiperParagraphOne">"Lorem ipsum odor amet, consectetuer adipiscing elit. Potenti diam semper inceptos penatibus dui nisl parturient. Bibendum commodo nullam hac sem vehicula viverra senectus dolor. Rutrum urna nibh nunc justo mattis maximus aenean mollis nibh. Fusce semper blandit tempus vel mauris. Sit fames placerat sagittis, potenti suscipit pretium."</div>
+                    <a class="artistSwiperLinkOne" id="artistLinkOne"><strong>-SOL</strong></a>
+
+                </div>
+
+                <div class="artistSwiperButtonsBox">
+                    <button class="swiperButton" id="swiperButtonOne">1</button>
+                    <button class="swiperButton" id="swiperButtonTwo">2</button>
+                </div>
+            </div>
+            <div class="artistSwiperImgBox">
+                <img class="artistSwiperImg" id="swiperImgOne" src="assets/swiperImgOne.svg">
+                <img class="artistSwiperImg" id="swiperImgTwo" src="assets/swiperImgTwp.svg">
+            </div>
+        </div>
+      </main>
+      <script src="script.js"></script>
+</body>
+        
+</html>
